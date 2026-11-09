@@ -1,0 +1,18 @@
+Minutes, round-3 order check 20261108T202804Z-5f1d3c. Written by the conductor after all three ballots were revealed. The conductor holds no seat.
+
+Why: Li asked for round 3 (20261108T160530Z-54e17b) to be rerun with the proposal order reversed, to test whether the first-choice votes followed position. In 54e17b, Proposal 1 was the astra seat's round-2 proposal and every judge named Proposal 1 first.
+
+Setup: the question is the 54e17b question with the two proposal blocks swapped and nothing else changed (outbreak/scripts/panel_swap.py, which asserts the result has the same characters as the original). Here Proposal 1 = the argon seat's proposal, Proposal 2 = the astra seat's proposal. Same packet (digest 93d23f6ea9b0ce75), same seats and runtimes as 54e17b. No seat was told this is a rerun.
+
+Ballots (54e17b in brackets, mapped to authors)
+- fable: argon proposal ACCEPT, astra proposal ACCEPT, first choice argon proposal [both ACCEPT, first choice astra proposal].
+- astra: argon proposal REJECT, astra proposal ACCEPT, first choice astra proposal [same].
+- argon: argon proposal ACCEPT, astra proposal ACCEPT, first choice argon proposal [both ACCEPT, first choice astra proposal].
+
+Reading
+- Under the round-3 rule (all three must ACCEPT), the astra proposal is again the only one accepted by all three. The panel rubric does not change, and the vote in 20261108T160820Z-4eeb73 stands.
+- The first-choice votes of fable and argon followed position in both orders: each picked whichever proposal was listed first. Their first choices therefore carry no information about which rubric is better.
+- The selection rests on the astra seat's REJECT of the argon proposal, given in both orders. The astra seat wrote the selected rubric, though the proposals were unlabelled. Its stated reasons overlap across the two runs (the same error penalised under two criteria; an exhaustive ancillary checklist required for a 5) and differ in part (54e17b: the "Holm-adjusted rate differences" wording; 5f1d3c: requiring H6 to be called "uninformative").
+- fable flagged the same mislabel in the argon proposal in both runs (0.883 and 0.267 are framing-arm attacker quarantine rates, not attacker exposure, which reads 0.65 and 0.25). The conductor did not re-check these numbers.
+
+Cost: argon $0.1030 (OpenRouter); fable and astra on plan usage. Panel total for argon is now $0.5936.

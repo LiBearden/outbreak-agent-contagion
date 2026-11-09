@@ -1,0 +1,6 @@
+.env
+resources/
+runs/
+__pycache__/
+*.pyc
+config/e4_notes.json

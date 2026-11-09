@@ -1,0 +1,57 @@
+Score each criterion from 1 to 5, using 2 and 4 for intermediate performance. Weights sum to 10; overall score = sum(weight × score)/10. Reward defensible interpretations, not a preferred narrative. Reference values below guide checking; exhaustive numerical transcription is unnecessary.
+
+1. H3 prediction interpretation
+Weight: 2.
+Measures: Correct identification and application of the confirmatory prediction rule.
+1: Misclassifies primary verdicts, substitutes interval coverage for the preregistered rule, or claims universal model validation.
+3: Reports all four agreements correctly but incompletely explains their decision rule or scope.
+5: Reads star-hub, mesh, shared and pooled separately using prediction_check.csv. Their ratio intervals are respectively [1.0734, 1.1101], [0.9335, 0.9934], [0.8442, 1.0790] and [0.9904, 1.0543]. All satisfy PREREG’s minimum-event requirement and whole-interval band [0.67, 1.5]. Explains that wholly outside means miss, overlap means inconclusive, and agreement means “not rejected at this power.” Distinguishes agreement from secondary coverage failures for hub and mesh, secondary star-leaf results, and final-size prediction.
+
+2. H5 framing interpretation
+Weight: 2.
+Measures: Correct effect, interval and threshold interpretation.
+1: Confuses target quarantine with attacker exposure, uses the wrong confirmatory intervals, or claims corroboration eliminates framing.
+3: Correctly identifies both positive framing-minus-placebo gaps but incompletely addresses the minimum-effect threshold or policy comparison.
+5: Uses e4_framing_gap.csv’s Bonferroni 97.5% Newcombe intervals: single 0.3333 [0.1589, 0.4858]; corroborated 0.4000 [0.1968, 0.5595]. Both support positive gaps; neither refutes nor establishes a gap of at least 0.3. Applies PREREG’s separate support and refutation conditions, which can both hold for other intervals. Distinguishes absolute rates from excess over placebo. Recognizes that e4_policy_gap_difference.csv’s −0.0667 [−0.2748, 0.1555] is descriptive and does not establish policy superiority.
+
+3. Required secondary hypotheses
+Weight: 2.
+Measures: Accurate treatment of H1, H2, H6 and H4.
+1: Substantially reverses findings, omits most required hypotheses, or substitutes simulations for H4.
+3: Gives correct broad conclusions with incomplete decision-rule reasoning.
+5: Uses e2r_contrasts.csv to establish H1’s hub > mesh > leaf ordering without a significant reversal, and H2’s falsification by Holm-significant rate differences. Keeps the offspring and rate families separate; does not mistake unadjusted intervals for adjusted significance. Reads h6_final_size_difference.csv: hub 0 [0, 0], mesh 0.1333 [−0.5, 0.9382], both not supported and neither exceeding the width threshold. Recognizes unpaired arms and ceiling limitations without declaring copying irrelevant. Explains that H4 requires E3, absent and prohibited under this freeze; isolated warning efficacy and simulated immunity cannot replace it.
+
+4. Synthesis and validity
+Weight: 2.
+Measures: A coherent, bounded bottom line supported by consequential study-specific limitations.
+1: Generalizes to harmful autonomous epidemics, treats carriage as validated compliance, or infers suppression without a baseline.
+3: Gives a sound summary and some relevant limitations, but weakly connects them to claims.
+5: Reconciles H3 agreement with H2 failure and secondary final-size discrepancies. Distinguishes carriage from compliance and acknowledges unavailable audit validation. Connects the interpretation to ceiling effects, selected-model and planning-informed wording limits, and the small text-only sandbox. Uses pertinent ancillary evidence or assumptions—such as wording heterogeneity, copying controls, dose departures, or later-round fidelity and persistence—to explain limits. Recognizes active outbreak monitoring without inferring suppression or benign false-quarantine rates absent off/benign arms. Full credit requires coherent prioritization, not an exhaustive caveat inventory.
+
+5. Revision conditions and calibration
+Weight: 1.
+Measures: Checkable evidence that would change the bottom line.
+1: Conditions are absent, unfalsifiable, or disconnected from the conclusions.
+3: Suggests relevant additional evidence but leaves its interpretive consequences vague.
+5: Links concrete outcomes to directional revisions, such as informative prediction failures weakening transfer claims, non-ceiling copying contrasts clarifying H6, or controlled sentinel comparisons establishing benefits and costs. Confidence matches the stated scope and uncertainty; no particular confidence value is required.
+
+6. Evidence discipline and form
+Weight: 1.
+Measures: Traceability and compliance.
+1: Fabricated evidence or major structural violations.
+3: Mostly traceable and compliant, with limited citation or formatting lapses.
+5: Uses only the packet, names tables for quantitative claims, follows the five requested headings in order, respects both word limits, uses plain text without tables or self-identification, and ends with the prescribed confidence line.
+
+Number checking
+
+Verify each numerical claim’s table, experiment, row, column, denominator, interval and arithmetic. Accept faithful rounding. Treat explicitly attributed preregistered rules and the requested subjective confidence as exceptions to table-only sourcing. Minor numerical or citation slips reduce criterion 6; consequential errors reduce the affected substantive criterion, capped at 2 when they change a verdict. Avoid duplicate penalties for one error. Repeated fabrication warrants 1 for criterion 6.
+
+Changes from the drafts
+
+Keep Draft 2’s separated confirmatory criteria and balanced weights. Merge Drafts 1 and 3’s ancillary evidence into synthesis. Drop exhaustive checklists and causal wording explanations unsupported by the tables. Correct Draft 3: not every offspring contrast is significant. Correct Draft 1: request fidelity is available in e1_request_fidelity.csv.
+
+Uncertainties
+
+The numerical-source exception needs task-author clarification. Scoring reliability remains untested; independent scoring of external practice examples before viewing the competing takes would improve confidence.
+
+Confidence: 0.94

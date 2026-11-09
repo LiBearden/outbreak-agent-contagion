@@ -1,0 +1,10 @@
+Minutes, reflection round 20261109T095912Z-7deaf0. Written by the conductor after all three texts were revealed. The conductor holds no seat.
+
+Why: Li asked to replace the panel vote with a collaborative seminar and, with the deadline two hours out, chose to run only the reflection round before submission. The full deliberation protocol (seminar/panel/deliberation_protocol.md) runs after submission.
+
+Setup: question outbreak/seminar/panel/reflect_question.md, filled with the takes' question and the draft protocol (budget section removed because it named the seats). Judges appear as Judge 1 = fable, Judge 2 = astra, Judge 3 = argon; seats were not told which they were. Same packet (93d23f6ea9b0ce75).
+
+Points of agreement (conductor's reading; not re-derived): H3 and H5 carry most weight; H3 has little power at ceiling; the H5 gap sits on a high placebo baseline; pre-committing the rubric and the order check were the strongest parts of the review; the unanimity rule gave one judge a veto; W last is the one robust vote result. All three propose scripted number checks before judging and a cap on claims per judge.
+Disagreement: two judges read the vote margin as family-driven; one holds a single family-aligned vote is insufficient evidence of self-preference.
+Stated confidence that their proposed process beats the vote: fable 0.7, astra 0.72, argon 0.88.
+Argon exceeded the word limit (1,046 of 900); filed as written. Argon cost $0.1153; panel total for argon $0.7089.

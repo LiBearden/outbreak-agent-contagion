@@ -1,0 +1,3 @@
+policy,comparison,n_pairs,target_q_diff,target_q_diff_ci_lo,target_q_diff_ci_hi,attacker_exposure_diff,attacker_exposure_diff_ci_lo,attacker_exposure_diff_ci_hi,induced_quarantines_per_attacker_note_diff,induced_quarantines_per_attacker_note_diff_ci_lo,induced_quarantines_per_attacker_note_diff_ci_hi,inputs_digest
+corroborated,framing minus placebo,60,0.4,0.23333333333333334,0.5666666666666667,0.25,0.15,0.36666666666666664,0.35,0.24166666666666667,0.4585416666666655,668965be30b54c27
+single,framing minus placebo,60,0.3333333333333333,0.21666666666666667,0.45,0.65,0.5166666666666667,0.7666666666666667,0.6083333333333333,0.45,0.7583333333333333,668965be30b54c27

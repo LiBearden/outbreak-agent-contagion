@@ -1,0 +1,77 @@
+Minutes, panel vote 20261108T160820Z-4eeb73 (Outbreak results). Written by the conductor after all ballots were revealed and the bundle was unblinded. The conductor holds no seat.
+
+Supersedes the single-judge verdict in seminar 20261108T130331Z-7f395d, which stays on record. Li replaced it with a three-judge panel on 2026-11-08 after reading it.
+
+Panel
+- fable: Claude Fable 5.1 (Agent tool).
+- astra: GPT-6 Astra (Codex exec, read-only; no commands run).
+- argon: Gemini 4 Argon (OpenRouter).
+All three judges got the same prompt bytes for every round, with the full packet inline (digest 93d23f6ea9b0ce75).
+
+Rubric (agreed before any judge saw a take)
+- Round 1, 20261108T154915Z-1be550: all three judges drafted a rubric.
+- Round 2, 20261108T155527Z-eeb7cf: the fable seat's write was blocked by a safety classifier. Li chose to continue without it. The astra and argon proposals were carried over unchanged into 20261108T160513Z-62e8c3.
+- Round 3, 20261108T160530Z-54e17b: all three judges accepted the astra proposal, and all three named it first choice. The argon proposal was accepted by fable and argon and rejected by astra.
+- The rubric is frozen unedited as outbreak/seminar/panel/rubric_final.txt, sha256 0af901052e0503e4.
+
+Vote
+- Labels W to Z were drawn with the commitment e40733703e9c901e63ea69e87438ce0637a1d8bab55a7a822c65eebdfd1b33bb, fixed before any ballot.
+- Unblinded: W = conductor, X = gpt, Y = kimi, Z = claude.
+- First-place votes: fable Y, astra X, argon Y.
+- Winner: Y (kimi), 2 of 3. No runoff was needed.
+
+Rankings
+- fable: Y, Z, X, W.
+- astra: X, Y, Z, W.
+- argon: Y, X, Z, W.
+
+Weighted totals, out of 5 (fable / astra / argon; sum)
+- W: 4.1 / 3.6 / 3.8; 11.5.
+- X: 4.2 / 4.6 / 4.7; 13.5.
+- Y: 4.6 / 4.5 / 5.0; 14.1.
+- Z: 4.6 / 3.9 / 4.3; 12.8.
+
+Stated confidence in the first-place vote: fable 0.6, astra 0.78, argon 0.93.
+
+Every judge placed W, the conductor's take, last.
+
+Where the judges were unsure about the scoring and the rubric
+- fable: Y and Z tied at 4.6, and fable broke the tie by judgment. Follow-up: rescore H3 and H5 for Y and Z only.
+- Word counts were not agreed on, for example whether headings count.
+- Unclear whether numbers quoted from PREREG or SPEC count as sourced from the packet.
+- Unclear how exactly the headings must match.
+- No take defines "miss" and "inconclusive" for H3.
+- No practice take was scored to calibrate the rubric before the vote.
+- Every bundled take carried an extra "Stated confidence" line. The conductor's bundle tool added it as metadata. Astra applied it as a formatting penalty to every take equally.
+
+Where the judges were unsure about the study, with the work that would resolve each point
+(The numbers in this section are quoted from the ballots. The conductor did not re-derive them.)
+1. H3 sits near ceiling. A model in which every exposed agent adopts also passes the band at the hub and on the mesh, so H3 cannot test model fit there.
+   Resolve: a lower-adoption wording (wording 2 alone) or other models; compute the lowest p the band could have rejected.
+2. H5 rests on a placebo baseline, with no off or benign E4 arm, so the rate of false quarantine without an attack is unknown.
+   Resolve: run the off and benign arms on the high tier.
+3. H2's mechanism is unexplained (the star-hub adopted at 1.0, against 0.916 in E1).
+   Resolve: an E1 variant that varies the number of clean peer notes in the inbox, to test whether inbox dilution drives H2.
+4. Dose 2 departed from independent exposure in 7 of 8 E1S cells.
+   Resolve: as point 3, plus a dose-response check below ceiling.
+5. H6 is saturated (12 E2N cascades against saturated arms).
+   Resolve: an unsaturated copying contrast.
+6. Compliance was not validated against mere quotation.
+   Resolve: the 200-item blind compliance audit.
+7. The mesh-versus-leaf rate contrast is borderline after Holm adjustment (0.076).
+   Resolve: more reps in that contrast.
+
+Caveats
+- Self-preference cannot be ruled out. astra (GPT family) voted for X (gpt) and wrote the rubric. fable (Claude) ranked Z (claude) second. argon has no take in the set, and it voted Y and ranked X second.
+- Argon exceeded the word limit in round 1 (893 of 700), round 2 (1248 of 900) and the vote (1810 of 1600). Its texts were filed as written.
+- The fable seat has no round-2 proposal.
+- Argon cost $0.4906 over 4 OpenRouter calls ($0.1089, $0.1245, $0.1036, $0.1536). Fable and Astra ran on plan usage.
+
+Comparison with the superseded verdict
+The single Fable judge tied A (claude) and B (kimi) at 50 of 50 and broke the tie for claude. The panel picked kimi on 2 of 3 votes, and the summed totals rank the takes kimi, gpt, claude, conductor.
+
+Addendum, 2026-11-09: round-3 order check (20261108T202804Z-5f1d3c; full minutes in seminar/panel/r3b_minutes.txt)
+- Li asked for round 3 to be rerun with the two proposals in reverse order.
+- The astra proposal was again the only one all three judges accepted, so the rubric and this vote stand.
+- fable and argon named whichever proposal came first as first choice, in both orders. Their first choices carry no information.
+- The selection rests on the astra seat's REJECT of the argon proposal, given in both orders. The astra seat wrote the selected rubric.

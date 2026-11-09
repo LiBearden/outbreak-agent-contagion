@@ -1,0 +1,3 @@
+topology,seed_position,n_e2,n_e2n,e2_mean,e2n_mean,diff,ci_lo,ci_hi,width,max_width,outcome,inputs_digest
+star,hub,60,12,8.0,8.0,0.0,0.0,0.0,0.0,3.5,not supported,abc3f79a2d201b8c
+mesh,any,60,12,7.716666666666667,7.583333333333333,0.13333333333333375,-0.5,0.9382142857142844,1.4382142857142846,3.5,not supported,abc3f79a2d201b8c
